@@ -5,18 +5,6 @@
     font-family: 'Dosis', sans-serif;
 }
 
-body{
-    display: flex;
-}
-
-.container{
-    display: flex;
-    margin: auto;
-    border: 1px solid #dedede;
-    padding: 20px
-}
-.chat-messenger{
-    margin: auto;
-    background: orange;
-    padding: 30px;
+.chat-box{
+    border: 1px solid #dedede
 }
