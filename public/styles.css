@@ -6,5 +6,51 @@
 }
 
 .chat-box{
-    border: 1px solid #dedede
+    border: 1px solid #dedede;
+    padding: 5px;
+    height: 40vh;
+    margin: 40px 0px;
+    overflow-y: scroll;
+}
+
+.chat-box::-webkit-scrollbar-track{
+    background: black;
+}
+
+::-webkit-thumb{
+    background: #fff;
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+}
+
+.cta input{
+    flex-basis: 400px;
+    outline: aquamarine;
+    margin: 0px 10px;
+}
+
+#send{
+    border: none;
+    outline: none;
+    padding: 5px 13px;
+    background: blue;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px){
+    .cta{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta input{
+        flex-basis: 50px;
+        margin: 10px 0;
+    }
 }

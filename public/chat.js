@@ -27,6 +27,21 @@ message.addEventListener('keypress',function(){
     socketUser.emit('typing', user.value);
 })
 
+document.addEventListener('keypress',function(e){
+    if(e.keyCode===13){
+        if((user.value!== "") && (message.value!== "")){
+            socketUser.emit('chat',{
+                message: message.value,
+                user: user.value
+            });
+                user.value = '';
+                message.value = '';
+        }else{
+            alert('Please enter some content')
+        }
+    }
+})
+
 //Listening for events
 
 socketUser.on('chat', function(data){
