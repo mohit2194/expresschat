@@ -5,21 +5,24 @@
     font-family: 'Dosis', sans-serif;
 }
 
+body{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    background: burlywood;
+}
+
 .chat-box{
     border: 1px solid #dedede;
+    background: #fff;
     padding: 5px;
+    width: 60vw;
     height: 40vh;
     margin: 40px 0px;
     overflow-y: scroll;
 }
 
-.chat-box::-webkit-scrollbar-track{
-    background: black;
-}
-
-::-webkit-thumb{
-    background: #fff;
-}
 
 .cta{
     display: flex;
